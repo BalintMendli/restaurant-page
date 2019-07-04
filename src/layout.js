@@ -12,11 +12,11 @@ const buildLayout = (el, components) => {
   const tabs = buildTabNav(el, components);
   layout.appendChild(tabs);
 
-  const tabContent = document.createElement('div');
-  tabContent.classList.add('tabs-content');
-  layout.appendChild(tabContent);
+  const tabContentElem = document.createElement('div');
+  tabContentElem.classList.add('tab-content');
+  layout.appendChild(tabContentElem);
 
-  return { layout, tabContent };
+  return { layout, tabContentElem };
 };
 
 export default buildLayout;
