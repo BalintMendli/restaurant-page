@@ -2,13 +2,12 @@ const menu = document.createElement('div');
 menu.classList.add('menu');
 
 const menuList = {
-  'Plate of Pasta': 'https://source.unsplash.com/ddZYOtZUnBk/300x300',
-  'Capellini tomato sauce': 'https://source.unsplash.com/PLyJqEJVre0/300x300',
-  'Pesto Pasta': 'https://source.unsplash.com/12eHC6FxPyg/300x300',
-  'Autumn Soup': 'https://source.unsplash.com/w6ftFbPCs9I/300x300',
-  'Toast bread with blueberry on black plate':
-    'https://source.unsplash.com/zcUgjyqEwe8/300x300',
-  'Pancakes with fruit': 'https://source.unsplash.com/GuvimT4IFok/300x300'
+  'Plate of Pasta': 'img/plate-of-pasta.jpg',
+  'Capellini tomato sauce': 'img/capellini-tomato-soup.jpg',
+  'Pesto Pasta': 'img/pesto-pasta.jpg',
+  'Autumn Soup': 'img/autumn-soup.jpg',
+  'Toast bread with blueberry on black plate': 'img/toast-bread.jpg',
+  'Pancakes with fruit': 'img/pancakes-with-fruits.jpg'
 };
 
 Object.keys(menuList).forEach(foodName => {
