@@ -13,11 +13,14 @@ const menuList = {
 Object.keys(menuList).forEach(foodName => {
   const menuRow = document.createElement('div');
   menuRow.classList.add('menu-row');
+
   const img = document.createElement('img');
   img.src = menuList[foodName];
   img.alt = foodName;
+
   const name = document.createElement('div');
   name.textContent = foodName;
+
   menuRow.appendChild(img);
   menuRow.appendChild(name);
   menu.appendChild(menuRow);

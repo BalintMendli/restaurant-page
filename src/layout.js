@@ -1,6 +1,6 @@
 import buildTabNav from './tabs';
 
-const buildLayout = (el, components) => {
+const buildLayout = (components, el) => {
   const layout = document.createElement('div');
   layout.classList.add('container');
 

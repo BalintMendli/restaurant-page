@@ -1,8 +1,10 @@
 const buildTabNav = (el, components) => {
   const tabNav = document.createElement('div');
   tabNav.classList.add('tab-nav');
+
   const ul = document.createElement('ul');
   tabNav.appendChild(ul);
+
   Object.keys(components).forEach(item => {
     const li = document.createElement('li');
     li.textContent = item;
@@ -10,6 +12,7 @@ const buildTabNav = (el, components) => {
     li.addEventListener('click', el);
     ul.appendChild(li);
   });
+
   return tabNav;
 };
 
