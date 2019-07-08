@@ -8,16 +8,19 @@ let activeTab = about;
 
 const tabClick = e => {
   activeTab = components[e.target.id];
-  setTabContent(activeTab);
-
-  const navElems = [...e.target.parentNode.children];
-  navElems.forEach(n => n.classList.remove('active'));
-  e.target.classList.add('active');
+  setTabContent(activeTab, tabContentElem);
+  setActiveTab(e.target);
 };
 
-const setTabContent = content => {
-  [...tabContentElem.children].forEach(el => el.remove());
-  tabContentElem.appendChild(content);
+const setTabContent = (content, elem) => {
+  [...elem.children].forEach(el => el.remove());
+  elem.appendChild(content);
+};
+
+const setActiveTab = navElem => {
+  const navElems = [...navElem.parentNode.children];
+  navElems.forEach(n => n.classList.remove('active'));
+  navElem.classList.add('active');
 };
 
 const { layout, tabContentElem } = buildLayout(components, tabClick);
@@ -25,4 +28,4 @@ const { layout, tabContentElem } = buildLayout(components, tabClick);
 const content = document.querySelector('#content');
 content.appendChild(layout);
 
-setTabContent(activeTab);
+setTabContent(activeTab, tabContentElem);

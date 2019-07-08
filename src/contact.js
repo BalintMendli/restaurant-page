@@ -2,7 +2,7 @@ const contact = document.createElement('div');
 contact.classList.add('contact');
 
 const heading = document.createElement('h2');
-heading.textContent = 'Reach out to us!';
+heading.textContent = 'Contact Us';
 
 const form = document.createElement('form');
 
@@ -14,7 +14,7 @@ emailInput.setAttribute('type', 'email');
 emailInput.setAttribute('placeholder', 'Your email');
 
 const message = document.createElement('textarea');
-message.setAttribute('placeholder', 'Message');
+message.setAttribute('placeholder', 'Your message');
 
 const sendButton = document.createElement('button');
 sendButton.textContent = 'Send';
