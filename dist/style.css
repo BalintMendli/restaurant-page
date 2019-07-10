@@ -1,0 +1,154 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('img/restaurant.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  height: 100%;
+  --def-b-radius: 8px;
+  --dark-bg: rgba(0, 0, 0, 0.7);
+}
+
+#content {
+  height: 100%;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title {
+  background: var(--dark-bg);
+  border-radius: var(--def-b-radius);
+  display: inline-block;
+  text-align: center;
+  padding: 12px 25px;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin: 80px 0;
+}
+
+.tab-nav {
+  margin: 40px 0 20px;
+}
+
+.tab-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.tab-nav li {
+  background: var(--dark-bg);
+  border-radius: var(--def-b-radius);
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.tab-nav li + li {
+  margin-left: 5px;
+}
+
+.tab-nav li.active {
+  background: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.tab-content {
+  background: var(--dark-bg);
+  border-radius: var(--def-b-radius);
+  padding: 20px 80px 60px;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu .menu-title {
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.menu .menu-row {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 0;
+  margin-top: 20px;
+}
+
+.menu .menu-row + .menu-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.menu .menu-row img {
+  width: 200px;
+  height: 150px;
+  border-radius: var(--def-b-radius);
+}
+
+.menu .menu-row .name {
+  margin-left: auto;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contact form * {
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border-radius: var(--def-b-radius);
+  width: 350px;
+}
+
+.contact form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.contact form button {
+  width: 180px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
